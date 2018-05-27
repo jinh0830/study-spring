@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<link rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.0/css/bootstrap.min.css}"/>
+<script th:src="@{/webjars/jquery/3.3.1-1/jquery.min.js}"></script>
+<script th:src="@{/webjars/bootstrap/4.1.0/js/bootstrap.min.js}"></script>
+
+<head>
+    <title>글쓰기</title>
+</head>
+<body>
+    <form method="post" th:action="@{/boards}">
+        <label name ="lbTitle">제목</label> :
+        <input type="text" name="title"></br>
+        <label name = "lbContent">내용</label> :
+        <textarea name="content" cols="50" rows="5"></textarea></br>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
